@@ -1,0 +1,69 @@
+* {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.container {
+  background-color: #926FF6;
+  height: 100vh;
+}
+
+header {
+  font-weight: 900;
+  font-size: 2em;
+  color: #eaf9ff;
+  padding-bottom: 100px;
+}
+
+.topBar {
+  display: flex;
+  padding: 50px 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topBarButton {
+  font-size: 0.7em;
+  color: #eaf9ff;
+  background-color: transparent;
+  padding: 10px 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.headerCentral {
+  width: 100%;
+  display: flex;
+  padding: 70px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroHeader {
+  padding: 20px;
+  font-weight: 900;
+}
+
+.sloganHeader {
+  font-weight: 200;
+}
+
+.downChevron {
+  height: 50px;
+  filter: invert(100%);
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+.curved {
+  height: 3vh;
+  width: 100%;
+  background-color: #eaf9ff;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.announcement {
+  height: 80vh;
+  background-color: #eaf9ff;
+}
