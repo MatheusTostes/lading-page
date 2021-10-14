@@ -7,14 +7,19 @@
   height: 100vh;
 }
 
-header {
-  font-weight: 900;
-  font-size: 2em;
-  color: #eaf9ff;
-  padding-bottom: 100px;
+body {
+  background-color: #F7EEFF;
+  color: #535353;
 }
 
-.topBar {
+header {
+  font-weight: 900;
+  font-size: 1em;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.top-bar {
   display: flex;
   padding: 50px 70px;
   justify-content: space-between;
@@ -25,20 +30,20 @@ header {
   cursor: pointer;
 }
 
-.topBarButton {
+.top-bar-button {
   display: inline-block;
   position: relative;
   font-size: 0.7em;
-  color: #eaf9ff;
+  color: #ffffff;
   background-color: transparent;
   padding: 10px 10px;
   margin: 0 10px;
   cursor: pointer;
 }
-.topBarButton:hover {
+.top-bar-button:hover {
   opacity: 0.7;
 }
-.topBarButton:after {
+.top-bar-button:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -46,53 +51,191 @@ header {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #eaf9ff;
+  background-color: #ffffff;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.topBarButton:hover:after {
+.top-bar-button:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.headerCentral {
+.header-central {
   width: 100%;
   display: flex;
-  padding: 70px 0;
+  padding: 30px 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.creative-header {
+  color: #FFAE00;
+}
 
-.heroHeader {
+.hero-header {
   padding: 20px;
   font-weight: 900;
 }
 
-.sloganHeader {
+.slogan-header {
   font-weight: 200;
 }
 
-.downChevron {
-  height: 40px;
-  filter: invert(100%);
+.down-chevron {
+  height: 25px;
   margin-top: 50px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
   cursor: pointer;
 }
-.downChevron:hover{
+.down-chevron:hover{
   margin: 60px 0 -10px 0;
   transition: 0.5s;
 }
 
-.curved {
+.curved-header-anouncement {
   height: 3vh;
   width: 100%;
-  background-color: #eaf9ff;
+  background-color: #ffffff;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 }
 
-.announcement {
-  height: 80vh;
-  background-color: #eaf9ff;
+.anouncement {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 100px 0 100px 0;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+.anouncement-text {
+  width: 25%;
+  height: 250px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  margin: 0 30px 0 70px;
+}
+
+.about-text {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #FFAE00;
+}
+
+.title-section {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.text-section {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.button-play-video{
+  width: 150px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 0.7em;
+  font-weight: 900;
+  color: #F3849F;
+  cursor: pointer;
+}
+.button-play-video:focus {
+  border: none;
+}
+
+.img-play-video {
+  background-color: transparent;
+  border-radius: 50%;
+  height: 30px;
+  margin: 12px;
+}
+
+.image-anouncement {
+  height: 250px;
+  margin: 0 70px 0 30px;
+  border-radius: 8px;
+}
+
+.curved-anouncement-projects {
+  position: relative;
+  height: 106px;
+  width: 100%;
+  background: #ffffff;
+  bottom: 0;
+}
+
+.curved-anouncement-projects::before, .curved-anouncement-projects::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 100%;
+}
+
+.curved-anouncement-projects::before {
+  width: 55%;
+  height: 80%;
+  background-color: #ffffff;
+  right: 0;
+  top: 40%;
+}
+.curved-anouncement-projects::after {
+  width: 55%;
+  height: 80%;
+  background-color: #F7EEFF;
+  left: -1.5%;
+  top: 60%;
+}
+
+.services {
+  height: 50vh;
+  background-color: #F7EEFF;
+  display: flex;
+  justify-content: center;
+}
+
+.container-card-services {
+  position: relative;
+  margin: -160px;
+  background-color: #ffffff;
+  height: 190px;
+  width: 50%;
+  padding: 30px 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 5px 20px rgba(131, 131, 131, 0.1);
+}
+
+.card-service {
+  width: 35%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 0.89em;
+}
+
+.card-image {
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.card-title {
+  margin: 8px;
+}
+
+.card-description {
+  font-weight: 200;
+  font-size: 0.8em;
 }
